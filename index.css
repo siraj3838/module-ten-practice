@@ -85,10 +85,11 @@ li a{
     height: 140px;
 }
 .sponsor-container{
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 60px;
     align-items: center;
-    margin: 0 165px 100px 165px;
+    margin: 0 196px 100px 196px;
 }
 /*this is collect css*/
 
@@ -246,7 +247,97 @@ li a{
 
 
 
+@media screen and (max-width: 576px) {
+    header{
+        margin-bottom: 20px;
+        height: 100px;
+    }
+    .banner-container{
+        margin: 40px 10px 10px 10px;
+    }
+    .nav{
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+    .nav ul{
+        gap: 10px;
+        margin: 0px;
+    }
+    .navbanner-container{
+        flex-direction: column-reverse;
+        gap: 10px;
+        justify-content: center;
+        height: auto;
+        margin: 10px;
+        padding: 10px;
+        align-items: center;
+        background-color: #FFF;
+        background-position:top;
+        background-repeat: no-repeat;
+        width: 100% auto;
+    }
+    .banner-image>img{
+        width: 100%;
+        margin: 50px 0px;
+    }
+    .banner-content{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .banner-tittle{
+        font-size: 1.9rem;
+    }
+    .sponsor-container{
+        flex-direction: column;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: 30px 10px;
+        align-content: center;
+        gap: 5px;
+        padding: 30px;
+    }
+    .sponsor-container>img{
+        width: 70%;
+    }
+    .collection-container{
+        margin: 15px;
+        padding-left: 15px;
+    }
+    .collection-image-container{
+        align-content: center;
+        justify-content: center;
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .product-container{
+        margin-top: 3350px;
+        margin-left: 0px;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+        
+    }
+    .product-image>img{
+        width: 100%;
+        height: 70%;
+    }
+    .product-content{
+        margin: 20px;
+        text-align: center;
+    }
+    .btn-primary-righticon{
+        flex-direction: row;
+        margin-right: 0;
+        margin-left: 100px;
+        margin-top: 30px;
+    }
+    .footer{
+        margin-top: 20px;
+    }
 
+}
 
 
 
