@@ -5,11 +5,16 @@
 }
 
 /*this is nav css*/
+.banner-container{
+    height: 52px;
+    
+    margin: 87px 120px 0px 120px;
+}
 .nav{
     display: flex;
-    justify-content: space-around;
+    gap: 494px;
+    justify-content: space-between;
     align-items: center;
-    margin: 87px 120px 145px 87px;
 }
 .nav-tittle{
     color: #3A3A3A;
@@ -31,11 +36,44 @@ li a{
     font-size: 1rem; 
     font-weight: 600;
 }
-
-
-
-
-
+/*this is banner section css*/
+.navbanner-container{
+    display: flex;
+    gap: 133px;
+    height: 480px;
+    justify-content: space-between;
+    margin: 52px 132px 69px 120px;
+    align-items: center;
+    background-color: #FFFFFF;
+    background-image: url(Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.banner-content{
+    text-align: left;
+}
+.banner-tittle{
+    color: #3A3A3A;
+    font-size: 3.25rem;
+    font-weight: 700;
+    margin: 0;
+}
+.banner-blog{
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 16px 0;
+}
+.btn-primary{
+    padding: 10px 24px;
+    gap: 8px;
+    border: 0;
+    border-radius: 41px;
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 700;
+}
 
 
 
