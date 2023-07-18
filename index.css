@@ -56,6 +56,9 @@ li a{
     background-repeat: no-repeat;
     background-position: bottom right;
 }
+.banner-image img{
+    width: 65%;
+}
 .banner-content{
     text-align: left;
 }
@@ -83,13 +86,15 @@ li a{
 }
 /*this is sponsor css*/
 .sponsor-section{
-    height: 140px;
+    min-height: 140px;
 }
 .sponsor-container{
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 60px;
-    align-items: center;
+    align-content: center;
+    min-height: 200px;
     margin: 0 196px 100px 196px;
 }
 /*this is collect css*/
@@ -267,7 +272,7 @@ li a{
     }
     .navbanner-container{
         flex-direction: column-reverse;
-        gap: 10px;
+        gap: 50px;
         justify-content: center;
         height: auto;
         margin: 10px;
@@ -276,11 +281,13 @@ li a{
         background-color: #FFF;
         background-position:top;
         background-repeat: no-repeat;
+        background-size: 80%;
         width: 100% auto;
     }
     .banner-image>img{
-        width: 100%;
-        margin: 50px 0px;
+        width: 40%;
+        margin-top: 80px;
+        margin-left: 100px;
     }
     .banner-content{
         text-align: center;
@@ -290,12 +297,9 @@ li a{
         font-size: 1.9rem;
     }
     .sponsor-container{
-        flex-direction: column;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
         margin: 30px 10px;
         align-content: center;
-        gap: 5px;
+        gap: 10px;
         padding: 30px;
     }
     .sponsor-container>img{
@@ -337,10 +341,126 @@ li a{
     .footer{
         margin-top: 20px;
     }
+    .nav-tittle
+    {
+        color: transparent;
+        background-image: linear-gradient(to bottom,hsla(165, 100%, 51%, 0.855),#fd00f9);
+        -webkit-background-clip: text;
+    }
+    ul li a,
+    .banner-tittle,
+    .banner-blog,
+    .popular-tittle,
+    .products-headline,
+    .products-blog,
+    .fot-headline
+    {
+        color: transparent;
+        background-image: linear-gradient(to bottom,hsla(0, 100%, 51%, 0.855),#9800fd);
+        -webkit-background-clip: text;
+    }
+    .image h4{
+        color: transparent;
+        background-image: linear-gradient(to bottom,#3825ffdd,#bc15cf);
+        -webkit-background-clip: text;
+    }
+    .image h5{
+        color: transparent;
+        background-image: linear-gradient(to bottom,#ff0000,#002fff);
+        -webkit-background-clip: text;
+    }
+    .see-more-content a,
+    .image .wordwide-blog{
+        color: transparent;
+        background-image: linear-gradient(to bottom,hsla(0, 100%, 51%, 0.867),#00a816e4);
+        -webkit-background-clip: text;
+    }
+
 
 }
 
 
+@media screen and (min-width: 577px) and (max-width:992px) {
+    .banner-container{
+        height: 50px;
+        margin: 5px 40px;
+    }
+    .nav{
+        gap: 50px;
+    }
+    .nav ul{
+        gap: 20px;
+    }
+    .products-headline,
+    .banner-blog,
+    .fot-headline,
+    .products-blog,
+    .nav-tittle,
+    ul li a{
+        color: transparent;
+        background-image: linear-gradient(to bottom,#04b227da,#bc2e2e);
+        -webkit-background-clip: text;
+    }
+    .banner-tittle,
+    .popular-tittle
+    {
+        font-size: 2.5rem;
+        color: transparent;
+        background-image: linear-gradient(to bottom,#4885dbdd,#2ebc41);
+        -webkit-background-clip: text;
+    }
+    .image h4{
+        color: transparent;
+        background-image: linear-gradient(to bottom,#3825ffdd,#bc15cf);
+        -webkit-background-clip: text;
+    }
+    .image h5{
+        color: transparent;
+        background-image: linear-gradient(to bottom,#ff0000,#002fff);
+        -webkit-background-clip: text;
+    }
+    .see-more-content a,
+    .image .wordwide-blog{
+        color: transparent;
+        background-image: linear-gradient(to bottom,hsla(0, 100%, 51%, 0.867),#00a816e4);
+        -webkit-background-clip: text;
+    }
+    .navbanner-container{
+        margin: 0px 40px 20px 40px;
+        background-position: center right;
+        background-size: 40%;
+        justify-content: center;
+        height: 320px;
+    }
+    .banner-image{
+        margin-right: 40px;
+    }
+    .banner-image img{
+        width: 80%;
+    }
+    .sponsor-container{
+        margin: 0px 100px 30px 100px;
+    }
+    .collection-container{
+        min-height: 2800px;
+        width: 100%;
+        margin: 10px 40px;
+    }
+    .collection-image-container{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0px;
+        row-gap: 30px;
+        width: 100%;
+    }
+    .see-more-content a{
+        justify-content: center;
+        margin-top: 0px;
+    }
+    .product-container{
+        height: 100%;
+        margin: 40px;
+    }
+}
 
 
 
